@@ -11,7 +11,7 @@ export async function DELETE(request: NextRequest, { params }: { params: { id: s
     return NextResponse.json(todo)
 }
 
-export async function EDIT(request: NextRequest, { params, body }: { params: { id: string }, body: { title: string, complete: boolean } }){
+export async function PATCH(request: NextRequest, { params, body }: { params: { id: string }, body: { title: string, complete: boolean } }){
     const id = params.id;
     const { title } = body;
 
