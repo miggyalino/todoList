@@ -17,7 +17,7 @@ const AddTask = () => {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     try {
-      fetch('/api/add-todo', {
+      fetch('/api/todo', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
